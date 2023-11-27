@@ -1,0 +1,229 @@
+%-------------------------
+% Resume in Latex
+% Author : Vinod Yedla
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% only for pdflatex
+% \input{glyphtounicode}
+
+% fontawesome
+\usepackage{fontawesome5}
+
+% fixed width
+\usepackage[scale=0.90,lf]{FiraMono}
+
+% light-grey
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% custom underilne
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+
+% custom font: helvetica-style
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} 
+%% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - serif
+% \titleformat{\section}{
+%   \vspace{2pt} \scshape \raggedright\large % header section
+% }{}{0em}{}[\color{black} \titlerule \vspace{-5pt}]
+
+% TODO EBSERIES
+% sans serif sections
+\titleformat {\section}{
+    \bfseries \vspace{1pt} \raggedright \large % header section
+}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
+
+% only for pdflatex
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
+      \textit{#3} & {\color{dark-grey} \small #4}\\ % second row of resume entry
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% CHANGED default leftmargin  0.15 in
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\color{text-grey}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Vinod Yedla} \\ \vspace{2pt}    
+    \hspace{1pt} \faEnvelope \hspace{2pt} \texttt{vinodyedla678@gmail.com} \hspace{5pt} $|$ 
+    \small \faPhone* \texttt{9381063388} \hspace{5pt} $|$
+    \hspace{1pt} \faMapMarker* \hspace{2pt}\texttt{Visakhapatnam, India} \\
+    \hspace{1pt} \faLinkedin\hspace{2pt} \href{https://www.linkedin.com/in/vinod-yedla/}{\texttt{Linkedin}} \hspace{1pt} $|$
+    \hspace{1pt} \faGithub\hspace{2pt} \href{https://github.com/Vinod678}{\texttt{GitHub}} \hspace{1pt} $|$    
+    \hspace{1pt} \faLink \hspace{2pt} \href{https://linktr.ee/vinodyedla}{\texttt{Portfolio}} \hspace{1pt}
+    \\ \vspace{-3pt}
+\end{center}
+
+\hspace{1em}\textbf{Java Backend developer} skilled in creating robust solutions with Java, Spring Boot, and databases. Collaborative team player committed to project success.
+
+
+%-----------EDUCATION-----------
+\section {EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Rajiv Gandhi University Of Knowledge Technologies - IIIT}{June 2017 - Aug 2021}
+      {Bachelor of Technology in Computer Science Engineering \textbf{CGPA: 8.17 / 10}}{Nuzvid, India}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Infosys}{Sep 2021 - Present}
+      {Systems Engineer}{Hyderabad, India}
+      \resumeItemListStart
+        \resumeItem{As a \textbf{Java developer at Inmarsat Client}, I contribute my expertise in Java, Spring Boot, Microservices, SQL, and AWS throughout the entire software development lifecycle of the INMARSAT client project.}
+        \resumeItem{I played a pivotal role in developing robust RESTful web services using Java 8 and the Spring framework, incorporating Spring MVC, Spring JDBC, Spring Security, and Spring Data.}
+         \resumeItem{Proficient in version control and continuous integration tools such as GIT and Jenkins, I leveraged my experience in container orchestration with Kubernetes and deployment of cloud solutions on AWS.}
+        \resumeItem{In collaboration with the QA team, I actively addressed bugs and proactively implemented measures to enhance application performance.}        
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {TV2Z, Inc.}{June 2021 - Sep 2021}
+      {Software Engineer Intern}{Hyderabad, India}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained the Spring Automation framework for an OTT (Over-The-Top) web application, utilizing Java, Selenium WebDriver, JUnit, and TestNG.}
+        \resumeItem{My responsibilities included continuous development and optimization of the automation framework to ensure its reliability and efficiency in testing the OTT web application.}
+        \resumeItem{Collaborated with development and QA teams to adapt to changing requirements and boost overall testing quality.}
+
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Languages/Frameworks} {: Java, Spring Boot, REST APIs, CI/CD, JavaScript, HTML/CSS, MySQL, C, Selenium, TestNG}\vspace{2pt} \\
+     \textbf{Tools} {: GitHub, AWS/CloudWatch, Jenkins, NewRelic/Dynatrace, Postman, Jira, MS Office}\vspace{2pt} \\     
+     \textbf{Courses} {: Data structures, Algorithms, Computer Networks, Cloud Computing, Image Processing}\vspace{2pt} \\     
+    }}
+ \end{itemize}  
+
+
+%-----------PROJECTS-----------
+
+\section{PROJECTS}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Face Recognition Using Local Binary Patterns(LBPs)}} {}
+          \resumeItemListStart
+            \resumeItem{Local Binary Patterns Histograms(LBPHs) was one of the approach to detect the Humans faces and Able to identify those faces. LBP was an different approach for face recognition which considers both shape and texture information to represent the face images.}            
+          \resumeItemListEnd
+          
+        \resumeProjectHeading
+          {\textbf{Image Forgery Detection}}{}
+          \resumeItemListStart
+            \resumeItem{Developed and Implement an tool to detect forged Images using Copy-Move Detection Approach}         
+          \resumeItemListEnd          
+      \resumeProjectHeading
+         {\textbf{Face Mask Detection using Deep Learning}}{}
+          \resumeItemListStart
+            \resumeItem{The main goal is to recognize unmasked people's faces and warn them to put on the mask.To detect faces, we utilised a deep learning-based system that includes a Convolutional Neural Network(CNN)}            
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+         {\textbf{Portfolio Web Application}}{}
+          \resumeItemListStart
+            \resumeItem{A personal website which  contains my Education details, Contact Details, My resume, Projects and experiences.}            
+          \resumeItemListEnd                                
+    \resumeSubHeadingListEnd
+
+
+
+
+%-------------------------------------------
+\end{document}
